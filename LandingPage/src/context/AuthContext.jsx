@@ -72,7 +72,7 @@ function AuthProvider({ children }) {
 
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/auth/login`,
+        `https://newmarkegy.com/api/auth/login`,
         formData
       );
       const { token } = response.data;
