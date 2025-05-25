@@ -109,7 +109,7 @@ export default function RasElHekmaLanding1() {
       console.log("New Submission:", submissionData);
       console.log("All Submissions:", [...submittedData, submissionData]);
       try {
-        await axios.post("http://localhost:3000/api/user", submissionData);
+        await axios.post("https://newmarkegy.com/api/user", submissionData);
         setShowMessage(true);
         setFormData({ name: "", countryCode: "+20", phone: "", interest: "" });
         setErrors({ name: "", phone: "", interest: "" });
